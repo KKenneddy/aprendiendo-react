@@ -25,6 +25,18 @@ const FollowMouse = () => {
     }
   }, [enabled])
 
+  // [] -> solo se ejecuta una vez
+  // [enabled] -> se ejecuta cada vez que enabled cambia
+  // undefined -> se ejecuta cada vez que se renderiza el componente
+
+  useEffect(() => {
+    document.body.classList.toggle('no-cursor', enabled)
+
+    return () => {
+      document.body.classList.remove('no-cursor')
+    }
+  }, [enabled])
+
   return (
     <main>
       <div style={{
