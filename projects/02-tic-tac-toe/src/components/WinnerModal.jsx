@@ -1,4 +1,3 @@
-/* eslint-disable react/prop-types */
 import { Square } from './Square'
 
 export const WinnerModal = ({ winner, resetGame }) => {
@@ -8,20 +7,20 @@ export const WinnerModal = ({ winner, resetGame }) => {
 
   return (
 
-        <section className='winner'>
-          <div className='text'>
-            <h2>{winnerText}</h2>
-            {
+    <section className='winner'>
+      <div className='text'>
+        <h2>{winnerText}</h2>
+        {
               winner && (
-                  <header className='win'>
-                    <Square>{winner}</Square>
-                  </header>
-                )
+                <header className='win'>
+                  <Square>{winner}</Square>
+                </header>
+              )
             }
-            <footer>
-              <button onClick={resetGame}>Empezar de nuevo</button>
-            </footer>
-          </div>
-        </section>
-      )
+        <footer>
+          <button onClick={resetGame}>Empezar de nuevo</button>
+        </footer>
+      </div>
+    </section>
+  )
 }

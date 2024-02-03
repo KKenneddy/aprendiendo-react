@@ -45,7 +45,7 @@ export const useGame = () => {
     if (newWinner) {
       confetti()
       setWinner(() => newWinner)
-    }else if (!newBoard.includes(null)) {
+    } else if (!newBoard.includes(null)) {
       setWinner(false)
     }
   }
@@ -55,6 +55,6 @@ export const useGame = () => {
     turn,
     winner,
     resetGame,
-    updateBoard,
+    updateBoard
   }
 }

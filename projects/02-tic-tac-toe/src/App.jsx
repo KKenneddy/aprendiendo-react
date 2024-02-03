@@ -2,7 +2,7 @@ import { TURNS } from './constants'
 import { WinnerModal, Tablero, ChangeTurn } from './components'
 import { useGame } from './hooks/useGame'
 
-function App() {
+function App () {
   const { turn, winner, board, resetGame, updateBoard } = useGame()
 
   return (

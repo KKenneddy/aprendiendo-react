@@ -1,4 +1,3 @@
-/* eslint-disable react/prop-types */
 import { Square } from './Square'
 
 export const ChangeTurn = ({ turn, turns }) => {
@@ -10,6 +9,6 @@ export const ChangeTurn = ({ turn, turns }) => {
       <Square isSelected={turn === turns.o}>
         {turns.o}
       </Square>
-  </section>
+    </section>
   )
 }
