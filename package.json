@@ -13,6 +13,9 @@
     "standard": "17.1.0"
   },
   "eslintConfig": {
-    "extends": "./node_modules/standard/eslintrc.json"
+    "extends": "./node_modules/standard/eslintrc.json",
+    "rules": {
+      "import/no-absolute-path": "off"
+    }
   }
 }
