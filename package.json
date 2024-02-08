@@ -10,12 +10,14 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "standard": "17.1.0"
+    "standard": "17.1.0",
+    "ts-standard": "12.0.2"
   },
   "eslintConfig": {
-    "extends": "./node_modules/standard/eslintrc.json",
-    "rules": {
-      "import/no-absolute-path": "off"
-    }
+    "extends": "ts-standard",
+    "parserOptions": {
+      "project": "./tsconfig.json"
+    },
+    "rules": {}
   }
 }
